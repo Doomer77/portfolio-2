@@ -1,0 +1,141 @@
+.about{
+  width: 100%; 
+  height: 100vh;   
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4000;
+  &__info{
+    padding: 4rem;
+  }
+  &__text{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    color: $color-grey-dark-3;   
+  }
+  &__qualities-box{
+    margin-top: 1rem; 
+  }
+
+  &__qualities-list{
+    list-style: none;
+  }
+
+  &__qualities-item{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__text-box{
+    margin-top: 2rem;
+  }
+
+  &__qualities-text{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__stack{
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  &__skills{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__skill-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    transition: all 0.3s;
+    &:hover{
+        transform: translateY(-0.4rem);
+    }
+    &--html5{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-html5-color;
+    }
+    &--css3{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-css3-color;
+    }
+    &--js{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-js-color;
+    }
+    &--react{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-react-color;
+    }
+    &--sass{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-sass-color;
+    }
+    &--npm{
+        width: 15rem;
+        height: 15rem;
+        border: 3px solid $about-skill-wrapper-npm-color;
+    }
+  }
+
+  &__skill-logo{
+    position: absolute;
+    &--html5{
+        top: 2.5rem;
+        height: 75%;
+    }
+    &--css3{
+        top: 1.5rem;
+        height: 90%;
+    }
+    &--js{
+        top: 2.5rem;
+        height: 75%;
+    }
+    &--react{
+        top: 1.5rem;
+        height: 80%;
+    }
+    &--sass{
+        top: 1.5rem;
+        left: 2rem;
+        height: 80%;
+    }
+    &--npm{
+        top: 1.5rem;
+        height: 80%;
+    }
+  }
+
+  &__skill-percent{
+    margin-top: 1.5rem;
+  }
+
+  &__skill-text{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+} 

@@ -1,0 +1,12 @@
+.footer{
+  padding: 2.5rem 0;
+
+  &__legal{
+      font-size: 2rem;
+      color: $color-white;
+      @include respond(phone) {
+          text-align: center;  
+      } 
+  };
+  
+}

@@ -1,0 +1,26 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base"; 
+@import "base/typography";
+
+@import "components/about";
+@import "components/bcg-video";
+@import "components/buttons";
+@import "components/close";
+@import "components/form";
+@import "components/footer";
+@import "components/header"; 
+@import "components/layout";
+@import "components/main-page";
+@import "components/main";
+@import "components/navigation";
+@import "components/projects"; 
+@import "components/slider";
+
+@import "page/feedback";
+@import "page/window";
+
+@import "utillities/utillities";    

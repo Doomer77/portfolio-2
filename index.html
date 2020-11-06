@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подгорный Сергей - frontend</title><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/fav.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- feedback -->
+  <section class="feedback hide fade">
+    <div class="layout">
+        <form action="" class="form">
+          <div class="form__close">
+
+          </div>
+          <input type="text" class="form__input" name="name" placeholder="Ваше имя" required> 
+          <input type="text" class="form__input" name="organization" placeholder="Организация" required>
+          <textarea class="form__textarea" name="message" placeholder="Текст сообщения"></textarea>
+          <button class="form__button form__button_js" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- navigation -->
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span> 
+    </label>     
+    <div class="navigation__background">
+        &nbsp;
+    </div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--js"><span>01</span>Обо мне</a></li>   
+        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--js"><span>02</span>Мои проекты</a></li>
+        <li class="navigation__item"><a href="https://github.com/Doomer77" class="navigation__link"><span>03</span>GitHub</a></li> 
+        <li class="navigation__item"><a href="https://vidnoe.hh.ru/resume/b208340fff07cb0bb30039ed1f7a764a396364" class="navigation__link"><span>04</span>Резюме на HH</a></li> 
+      </ul>
+    </nav>
+  </div>
+
+  <!-- main-page -->
+  <section class="main-page">
+    <!-- header -->
+    <header class="header">
+      <a href="https://github.com/Doomer77" class="header__link">
+        <svg class="header__icon">
+          <use xlink:href="img/sprite.svg#icon-github-with-circle"></use> 
+        </svg>
+      </a>
+      <a href="https://vk.com/id54937443" class="header__link">
+        <svg class="header__icon">
+          <use xlink:href="img/sprite.svg#icon-vk-with-circle"></use>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/podgornyi84/" class="header__link">
+        <svg class="header__icon">
+          <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+        </svg>
+      </a>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__text-box">
+        <h1 class="heading-primary u-margin-bottom-small">
+          <span class="heading-primary--main u-margin-bottom-small">Подгорный Сергей</span>
+          <span class="heading-primary--sub u-margin-bottom-medium">HTML-верстальщик | Front-end разработчик</span>
+        </h1>
+        <a href="#" class="btn btn--white btn--animated btn--js">Напишите мне</a>
+        </div>
+        <div class="form__intro form__intro--js hide">
+        <h2 class="form__intro-title">Спасибо!</h2>
+        <p class="form__intro-text">Я обязательно  прочитаю Ваше сообщение</p>
+      </div>
+    </main> 
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__legal">
+          &copy;2020 Portfolio design in Photoshop by Podgorny Sergey. All rights reserved. 
+        </div>
+    </footer>
+  </section>
+
+  <!-- bcg-video -->
+  <div class="bcg-video">
+    <video class="bcg-video__content" autoplay muted loop>
+        <source src="img/Workaholic.mp4" type="video/mp4">
+        <source src="img/Workaholic.webm" type="video/webm">
+        Ваш браузер не поддерживает видеоконтент!
+    </video>   
+  </div> 
+
+  <!-- about -->
+  <section class="about hide fade popup">
+    <div class="layout">
+      <div class="window">
+        <div class="close">
+
+        </div>
+        <div class="about__info">
+          <p class="about__text">Всем привет. Меня зовут Сергей. Я Начинающий HTML-верстальщик и Frontend - разработчик. Имею небольшой опыт в коммерческой разработке около 5-6 месяцев. Занимался разработкой интерфейса приложения для складского учета внутри фирмы в небольшой команде разработчиков.</p>
+          <div class="about__my">
+              <h3 class="heading-tertiary">Обо мне</h3>
+              <div class="about__qualities-box">
+                <ul class="about__qualities-list">
+                  <li class="about__qualities-item">- Ответственный</li>
+                  <li class="about__qualities-item">- Быстро обучаемый</li>
+                  <li class="about__qualities-item">- Умение работать в команде</li>
+                  <li class="about__qualities-item">- Достигаю поставленных целей</li>
+                  <li class="about__qualities-item">- Принятие самостоятельных решений</li>
+                  <li class="about__qualities-item">- При необходимости пройду дополнительное обучение по вакансии</li>
+                </ul>
+              </div>
+              <div class="about__text-box">
+                <p class="about__qualities-text">P.S. Успешно прошел курс «JavaScript. Профессиональная разработка веб-интерфейсов» от HTML Academy, который проходит c 15 сентября по 15 ноября 2020 года. Защитил личный проект "Кексобукинг" на 100%</p>
+              </div>
+            </div>   
+            <div class="about__stack">
+              <h3 class="heading-tertiary">Мой основной Stack</h3>
+              <div class="about__skills">
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--html5">
+                    <img src="img/html5-logo.png" alt="Навык html5" class="about__skill-logo about__skill-logo--html5">
+                  </div>
+                  <div class="about__skill-percent">
+                    <p class="about__skill-text">html5</p> 
+                    <p class="about__skill-text">65%</p>
+                  </div>
+                </div>
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--css3">
+                    <img src="img/css3-logo.png" alt="Навык css3" class="about__skill-logo about__skill-logo--css3">
+                  </div>
+                  <div class="about__skill-percent"> 
+                    <p class="about__skill-text">css3</p>  
+                    <p class="about__skill-text">65%</p>
+                  </div>
+                </div>
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--js">
+                    <img src="img/js-logo.png" alt="Навык javascript" class="about__skill-logo about__skill-logo--js">
+                  </div>
+                  <div class="about__skill-percent"> 
+                    <p class="about__skill-text">javascript</p>  
+                    <p class="about__skill-text">45%</p>
+                  </div>
+                </div>
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--react">
+                    <img src="img/react-logo.png" alt="Навык react" class="about__skill-logo about__skill-logo--react">
+                  </div>
+                  <div class="about__skill-percent"> 
+                    <p class="about__skill-text">react</p>  
+                    <p class="about__skill-text">45%</p>
+                  </div>
+                </div>
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--sass">
+                    <img src="img/sass-logo.png" alt="Навык sass" class="about__skill-logo about__skill-logo--sass">
+                  </div>
+                  <div class="about__skill-percent"> 
+                    <p class="about__skill-text">sass</p>  
+                    <p class="about__skill-text">55%</p>
+                  </div>
+                </div>
+                <div class="about__skill">
+                  <div class="about__skill-wrapper about__skill-wrapper--npm">
+                    <img src="img/npm-logo.png" alt="Навык sass" class="about__skill-logo about__skill-logo--npm">
+                  </div>
+                  <div class="about__skill-percent"> 
+                    <p class="about__skill-text">npm</p>  
+                    <p class="about__skill-text">40%</p>
+                  </div>
+                </div>
+              </div>   
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- my projects -->
+  <section class="projects hide fade popup">
+    <div class="layout">
+      <div class="window">
+        <div class="close">
+
+        </div>
+        <div class="projects__info">
+          <h2 class="heading-primary heading-primary--green">Мои проекты</h2>
+          <div class="slider">
+            <div class="slider__item">
+              <div class="slider__img-box">
+                <img src="img/slide-1.jpg" alt="ООО НПФ БИП сервис" class="slider__img">
+              </div>
+              <div class="slider__content">
+                <h3 class="heading-tertiary">ООО НПФ БИП сервис</h3>
+                <p class="slider__text">
+                  Мой первый рабочий проект, реализованный для сервисной фирмы ООО "НПФ БИП сервис". Для создания сайта, был разработан макет в Adobe Phtoshop. Верстка сайта реализованна на CSS Flexbox. Для разработки интерактивности сайта применялись Jquery плагины Fancybox, Slick slider. Был применены SASS  и БЭМ для быстрой стилизации компонентов. В качестве инструментов сборки проекта применялся менеджер пакетов NPM.
+                </p>
+                <div class="slider__box-link">
+                  <a href="https://www.bipservice-moskva.ru/" class="slider__link slider__link--site">Перейти на сайт</a>
+                  <a href="https://github.com/Doomer77/bipsrvce" class="slider__link slider__link--git">Код на GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__img-box">
+                <img src="img/slide-2.jpg" alt="Trillo" class="slider__img">
+              </div>
+              <div class="slider__content">
+                <h3 class="heading-tertiary">Учебный проект Trillo</h3>
+                <p class="slider__text">
+                  Учебный проект Trillo, входящий в программу Advanced CSS and Sass: Flexbox, Grid, Animations and More!, нацелен на закрепление навыков верстки с применением технологии Flexbox. Данный курс расположен на ресурсе Udemy. В данном проекте были рассмотрены все аспекты и подводные камни, которые могут встречаться при верстке на Flexbox. Был применены SASS  и БЭМ для быстрой стилизации компонентов. В качестве инструментов сборки проекта применялся менеджер пакетов NPM.
+                </p>
+                <div class="slider__box-link">
+                  <a href="http://trillo.pjparts.ru/" class="slider__link slider__link--site">Перейти на сайт</a>
+                  <a href="https://github.com/Doomer77/Trillo" class="slider__link slider__link--git">Код на GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__img-box">
+                <img src="img/slide-3.jpg" alt="Natours" class="slider__img">
+              </div>
+              <div class="slider__content">
+                <h3 class="heading-tertiary">Учебный проект Natours</h3>
+                <p class="slider__text">
+                  Учебный проект Natours, входящий в программу Advanced CSS and Sass: Flexbox, Grid, Animations and More!, нацелен на закрепление навыков блочной верстки с применением свойства float, для поддержания ранних версий браузеров. Данный курс расположен на ресурсе Udemy. В данном проекте были рассмотрены все аспекты и подводные камни, которые могут встречаться при верстке на float. Был применены SASS  и БЭМ для быстрой стилизации компонентов. В качестве инструментов сборки проекта применялся менеджер пакетов NPM.
+                </p>
+                <div class="slider__box-link">
+                  <a href="http://natours.pjparts.ru/" class="slider__link slider__link--site">Перейти на сайт</a>
+                  <a href="https://github.com/Doomer77/natours" class="slider__link slider__link--git">Код на GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__img-box">
+                <img src="img/slide-4.jpg" alt="Nexter" class="slider__img">
+              </div>
+              <div class="slider__content">
+                <h3 class="heading-tertiary">Учебный проект Nexter</h3>
+                <p class="slider__text">
+                  Учебный проект Nexter, входящий в программу Advanced CSS and Sass: Flexbox, Grid, Animations and More!, нацелен на закрепление навыков блочной верстки с применением стехнологии CSS GRID. Данный курс расположен на ресурсе Udemy. В данном проекте были рассмотрены все аспекты и подводные камни, которые могут встречаться при верстке на CSS GRID. Был применены SASS  и БЭМ для быстрой стилизации компонентов. В качестве инструментов сборки проекта применялся менеджер пакетов NPM.
+                </p>
+                <div class="slider__box-link">
+                  <a href="http://nexter.pjparts.ru/" class="slider__link slider__link--site">Перейти на сайт</a>
+                  <a href="https://github.com/Doomer77/nexter" class="slider__link slider__link--git">Код на GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__img-box">
+                <img src="img/slide-5.jpg" alt="Nexter" class="slider__img">
+              </div>
+              <div class="slider__content">
+                <h3 class="heading-tertiary">Учебный проект Keksobooking</h3>
+                <p class="slider__text">
+                  «Кексобукинг» — мой основной проект, который я успешно защитил на интенсиве "JavaScript. Профессиональная разработка веб-интерфейсов Уровень 1". Программа данного курса была направлена на работу со встроенным API, DOM,  обработками событий, модулями, со структурой данных и производительностью. А так же был рассмотрен сборщик проектов Webpack.  
+                </p>
+                <div class="slider__box-link">
+                  <a href="http://keksobooking.pjparts.ru/" class="slider__link slider__link--site">Перейти на сайт</a>
+                  <a href="https://github.com/Doomer77/1392667-keksobooking-21" class="slider__link slider__link--git">Код на GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <a class="slider__prev" onclick="minusSlide()">&#10094;</a>
+            <a class="slider__next" onclick="plusSlide()">&#10095;</a>
+          </div>
+          <div class="dots">
+            <span class="dots__item" onclick="currentSlide(1)"></span> 
+            <span class="dots__item" onclick="currentSlide(2)"></span> 
+            <span class="dots__item" onclick="currentSlide(3)"></span> 
+            <span class="dots__item" onclick="currentSlide(4)"></span>
+            <span class="dots__item" onclick="currentSlide(5)"></span>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
