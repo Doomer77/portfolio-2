@@ -11,16 +11,17 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fadeIn;
     animation-duration: 1.5s;
-    @include respond(tab-port-1100) {
+    @include respond(tab-land) {
       flex-direction: column;
-      align-items: center;  
+      align-items: center;
+      justify-content: space-around;
     }
   }   
   &__img-box{  
     width: 60%; 
-    @include respond(tab-port-1100) {
+    @include respond(tab-land) {
       width: 70%;
-    }  
+    }
   }   
   &__img{ 
     object-fit: fill;    
@@ -34,7 +35,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    @include respond(tab-port-1100) {
+    @include respond(tab-land) {
       width: 100%;
     }
   }

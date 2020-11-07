@@ -167,7 +167,7 @@ body {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
   .about__skill {
     display: flex;
     flex-direction: column;
@@ -230,12 +230,25 @@ body {
   .about__skill-percent {
     margin-top: 1.5rem; }
   .about__skill-text {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     text-transform: uppercase;
     text-align: center;
     font-style: italic;
-    font-weight: bold; }
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5); }
+    .about__skill-text--html {
+      color: #e44d26; }
+    .about__skill-text--css3 {
+      color: #0277bd; }
+    .about__skill-text--js {
+      color: #e9ca32; }
+    .about__skill-text--react {
+      color: #81dffc; }
+    .about__skill-text--sass {
+      color: #563e7d; }
+    .about__skill-text--npm {
+      color: #d50000; }
 
 .bcg-video {
   position: absolute;
@@ -459,13 +472,15 @@ body {
 
 .layout {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5rem 0;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .layout {
+      height: auto; } }
 
 .main-page {
   position: relative;
@@ -625,13 +640,14 @@ body {
     -webkit-animation-duration: 1.5s;
     animation-name: fadeIn;
     animation-duration: 1.5s; }
-    @media only screen and (max-width: 68.75em) {
+    @media only screen and (max-width: 75em) {
       .slider__item {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center;
+        justify-content: space-around; } }
   .slider__img-box {
     width: 60%; }
-    @media only screen and (max-width: 68.75em) {
+    @media only screen and (max-width: 75em) {
       .slider__img-box {
         width: 70%; } }
   .slider__img {
@@ -645,7 +661,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    @media only screen and (max-width: 68.75em) {
+    @media only screen and (max-width: 75em) {
       .slider__content {
         width: 100%; } }
   .slider__text {
@@ -718,11 +734,13 @@ body {
 
 .window {
   width: 90%;
-  height: 90vh;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .window {
+      height: auto; } }
 
 .hide {
   display: none; }

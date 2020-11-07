@@ -45,7 +45,7 @@
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__skill{
@@ -131,11 +131,30 @@
   }
 
   &__skill-text{
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     text-transform: uppercase;
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    color: $color-black-2; 
+    &--html{
+      color: #e44d26;
+    }
+    &--css3{
+      color: #0277bd;  
+    }
+    &--js{
+      color: #e9ca32;
+    }
+    &--react{
+      color: #81dffc;
+    } 
+    &--sass{
+      color: #563e7d;
+    } 
+    &--npm{
+      color: #d50000; 
+    }
   }
 } 

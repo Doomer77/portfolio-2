@@ -25,6 +25,17 @@ blockOpen.forEach((item, index) => {
 		block.forEach((i, ind) => {
 			if (index === ind) {
                 i.classList.remove('hide');
+                skillsClear.forEach((el) => {
+                    el.textContent = ``;
+                });
+                setTimeout(() => {
+                    getProcentsSkill(0, 75, skillHtml);
+                    getProcentsSkill(0, 70, skillCSS3);
+                    getProcentsSkill(0, 65, skillJS);
+                    getProcentsSkill(0, 45, skillReact);
+                    getProcentsSkill(0, 65, skillSASS);
+                    getProcentsSkill(0, 55, skillNPM);
+                }, 500);
 			} else {
 				i.classList.add('hide');
 			}
@@ -77,6 +88,25 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+let skillsClear = document.querySelectorAll('.about__skill-text--clear');
+let skillHtml = document.querySelector('.about__skill-text--html');
+let skillCSS3 = document.querySelector('.about__skill-text--css3');
+let skillJS = document.querySelector('.about__skill-text--js');
+let skillReact = document.querySelector('.about__skill-text--react');
+let skillSASS = document.querySelector('.about__skill-text--sass');
+let skillNPM = document.querySelector('.about__skill-text--npm');
+
+let getProcentsSkill = (start, end, el) => {
+    let counter = setInterval(foo, 10);
+    function foo () {
+        start += 1; 
+        el.textContent = `${start}%`;
+        if (start >= end) {
+            clearInterval(counter);
+        }
+    }   
+};
+
 form && form.addEventListener("submit", (e) => {
     e.preventDefault();
     var t = new FormData(form),
@@ -92,7 +122,7 @@ form && form.addEventListener("submit", (e) => {
                 message: t.get("message")
             })
         };
-    fetch("/send_post.php", n).then((e) => {
+    fetch("/send_post.php", n).then((e) => { 
         feedbackWindow.classList.remove("show"), 
         feedbackWindow.classList.add("hide"),
         submitForm.classList.add("show");
