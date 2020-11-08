@@ -1,10 +1,7 @@
 .window{
-  width: 90%;  
+  width: 90%; 
   background-color: $color-white;            
   border-radius: 1rem;
   box-shadow: $shadow;
   position: relative; 
-  @include respond(phone) {
-    height: auto;
-  }
 }
